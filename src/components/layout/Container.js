@@ -29,7 +29,7 @@ const Container = ({ children }) => {
             <Outlet /> {/*  per renderizzare tutto quello che è sotto come "figlio"  */}
             {/* {children} */}
             <div className='flex justify-end gap-5'>
-              {location.pathname != "/login" && <div className="flex justify-end mt-8">
+              {location.pathname != "/login" && localStorage.getItem("user") == "true" && <div className="flex justify-end mt-8">
                 <UiButton
                   title="Logout"
                   onClick={logout}
