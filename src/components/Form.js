@@ -125,6 +125,7 @@ const Form = () => {
           <UiInput
             id="cerca"
             label="Cerca"
+            type="text"
             value={form.search}
             onChange={(event) => {
               const val = event.target.value;
@@ -147,6 +148,7 @@ const Form = () => {
           <UiInput
             id="firstname"
             label="Firstname"
+            type="text"
             value={form.firstName}
             onChange={(event) => {
               const val = event.target.value;

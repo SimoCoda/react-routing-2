@@ -1,6 +1,6 @@
 import React from "react";
 
-export const UiInput = ({ id, label, value, onChange, error }) => {
+export const UiInput = ({ id, label, value, type, onChange, error }) => {
   let classes =
     "w-full rounded-md h-10 p-2 focus:ring-indigo-500 focus:border-indigo-500";
 
@@ -21,7 +21,7 @@ export const UiInput = ({ id, label, value, onChange, error }) => {
       <input
         id={id}
         name={id}
-        type="text"
+        type={type ? type : "text"}
         value={value}
         onChange={onChange}
         className={classes}
