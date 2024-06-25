@@ -6,7 +6,7 @@ import Form from "./components/Form"
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Page404 from "./pages/Page404";
-import Products from "./pages/Products";
+import ProductsPage from "./pages/ProductsPage";
 import ProductsDetail from "./pages/ProductsDetail";
 import Search from "./pages/Search";
 import Private from "./pages/Private";
@@ -25,7 +25,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/private" element={<RequireAuth><Private /></RequireAuth>} />
           <Route path="/search" element={<Search />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<ProductsPage />} />
           <Route path="/products/:id" element={<ProductsDetail />} />
           <Route path="*" element={<Page404 />} />
         </Route>
