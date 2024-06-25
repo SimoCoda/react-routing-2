@@ -42,7 +42,7 @@ const Login = () => {
 
         setTimeout(()=>{
             navigate("/private");
-        },2000)
+        },1500)
     }
 
     return (

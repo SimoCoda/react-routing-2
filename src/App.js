@@ -11,6 +11,7 @@ import ProductsDetail from "./pages/ProductsDetail";
 import Search from "./pages/Search";
 import Private from "./pages/Private";
 import Login from "./pages/Login";
+import RequireAuth from "./components/layout/RequireAuth";
 
 
 export default function App() {
@@ -22,7 +23,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/private" element={<Private />} />
+          <Route path="/private" element={<RequireAuth><Private /></RequireAuth>} />
           <Route path="/search" element={<Search />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductsDetail />} />
